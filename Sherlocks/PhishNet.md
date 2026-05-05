@@ -23,7 +23,7 @@ Open the eml file:
 * in a text editor to manually examine the email headers 
 * using a local email client to visually see the message sent
 
-![Email](../Images/Sherlock_PhishNet_email)
+![Email](../Images/Sherlock_PhishNet_email.PNG)
 
 ## Questions
 **1. What is the originating IP address of the sender?**
