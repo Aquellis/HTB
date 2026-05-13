@@ -35,6 +35,8 @@ Starting from the most active, looking closer at the traffic of host **10.4.17.1
 
 **Answer: 10.4.17.101**
 
+---
+
 **2. The attacker downloaded a suspicious file. What is the HTTP method used to retrieve the properties of this file?**
 Find all HTTP requests in the packet capture under **Statistics > HTTP > Requests**
 
@@ -88,10 +90,14 @@ The HTTP method [PROPFIND](https://learn.microsoft.com/en-us/previous-versions/o
 
 **Answer: PROPFIND**
 
+---
+
 **3. It appears that this file is malware. What is its filename?**
 While investigating question 2, we found a GET request for the suspicious file. The filename is **avp.msi**
 
 **Answer: avp.msi**
+
+---
 
 **4. What is the SSDEEP hash of the malware as reported by VirusTotal?**
 We first need to extract the malicous file from the packet capture using **File > Export Objects > HTTP** then upload it to [VirusTotal](https://www.virustotal.com/gui/home/upload) for analysis.
@@ -102,6 +108,8 @@ Navigate to the VirusTotal **Details** tab and find the SSDEEP hash to answer th
 
 **Answer: 24576:BqKxnNTYUx0ECIgYmfLVYeBZr7A9zdfoAX+8UhxcS:Bq6TYCZKumZr7ARdAAO8oxz**
 
+---
+
 **5. According to the NeikiAnalytics community comment on VirusTotal, to which family does the malware belong?**
 
 Navigate to the VirusTotal **Community** tab and find the comment from user **NeikiAnalytics** to answer the question.
@@ -110,17 +118,23 @@ Family labels can also be found under the VirusTotal **Detection** tab under **F
 
 **Answer: ssload**
 
+---
+
 **6. What is the creation time of the malware?**
 
 Navigate to the VirusTotal **Details** tab and find **Creation Time** under **History**.
 
 **Answer: 2009-12-11 11:47:44**
 
+---
+
 **7. What is the domain name that the malware is trying to connect with?**
 
 Navigate to the VirusTotal **Relations** tab and find the domain under **Contacted Domains**.
 
 **Answer: api.ipify.org**
+
+---
 
 **8. What is the IP address that the attacker has consistently used for communication?**
 
@@ -129,6 +143,8 @@ Looking closer at the information in the VirusTotal **Relations** tab, we see se
 Going back to the pcap file, this was the same address that had a suspicious HTTP request seen in question 2. This must be the IP used for communication.
 
 **Answer: 85.239.53.219**
+
+---
 
 **9. Which file, included in the original package, is extracted and utilized by the malware during execution?**
 
@@ -144,10 +160,14 @@ forcedelctl can be found in the archive output.
 
 **Answer: forcedelctl.dll**
 
+---
+
 **10. What program is used to execute the malware?**
 Navigate to the VirusTotal **Behavior** tab and under **Processes Created** and **Shell Commands** we can see msiexec.exe is used.
 
 **Answer: msiexec.exe**
+
+---
 
 **11. What is the hostname of the compromised machine?**
 
@@ -167,6 +187,8 @@ The compromised hostname is given in the POST /api/gateway request.
 
 **Answer: DESKTOP-FWQ3U4C**
 
+---
+
 **12. What is the key that was used in the attack?**
 
 Continue to follow the TCP stream from question 11:
@@ -185,15 +207,21 @@ The key is given in the 200 OK response to the POST.
 
 **Answer: WkZPxBoH6CA3Ok4iI**
 
+---
+
 **13. What is the os_version of the compromised machine?**
 Re-look at the POST request in question 11. The OS of the compromised machine is given.
 
 **Answer: Windows 6.3.9600**
 
+---
+
 **14. What is the owner name of the compromised machine?**
 Re-look at the POST request in question 11. The owner of the compromised machine is given.
 
 **Answer: Nevada**
+
+---
 
 **15. After decrypting the communication from the malware, what command is revealed to be sent to the C2 server?**
 
