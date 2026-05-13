@@ -42,6 +42,8 @@ Open the auth.log file and search for several suspicious login attempts from the
 
 **Answer: 65.2.161.68**
 
+---
+
 **2. The bruteforce attempts were successful and attacker gained access to an account on the server. What is the username of the account?**
 
 Now that we know the malicious IP address, search for successful authentications in the auth.log from this IP.
@@ -49,6 +51,8 @@ Now that we know the malicious IP address, search for successful authentications
 ![q2](../Images/Sherlock_Brutus_q2.PNG)
 
 **Answer: root**
+
+---
 
 **3. Identify the UTC timestamp when the attacker logged in manually to the server and established a terminal session to carry out their objectives. The login time will be different than the authentication time, and can be found in the wtmp artifact.**
 
@@ -62,6 +66,8 @@ Convert the timestamp in the log file to UTC for the answer.
 
 **Answer: 2024-03-06T06:32:45**
 
+---
+
 **4. SSH login sessions are tracked and assigned a session number upon login. What is the session number assigned to the attacker's session for the user account from Question 2?**
 
 Re-examine the auth.log file, looking for SSH session creation around the time found from question 3. The SSH session number can be found in the log.
@@ -69,6 +75,8 @@ Re-examine the auth.log file, looking for SSH session creation around the time f
 ![q4](../Images/Sherlock_Brutus_q4.PNG)
 
 **Answer: 37**
+
+---
 
 **5. The attacker added a new user as part of their persistence strategy on the server and gave this new user account higher privileges. What is the name of this account?**
 
@@ -78,11 +86,15 @@ In the auth.log file, search for the term **useradd** to find instances where ne
 
 **Answer: cyberjunkie**
 
+---
+
 **6. What is the MITRE ATT&CK sub-technique ID used for persistence by creating a new account?**
 
 The MITRE ATT&CK technique seen here is **Create Account** and the sub-technique is **Local Account**, meaning a new local user was created on the compromised machine. This sub-technique's documentation can be found [here](https://attack.mitre.org/techniques/T1136/001/).
 
 **Answer: T1136.001**
+
+---
 
 **7. What time did the attacker's first SSH session end according to auth.log?**
 
@@ -91,6 +103,8 @@ From question 4 we know the malicious SSH session number, so we must search the 
 ![q7](../Images/Sherlock_Brutus_q7.PNG)
 
 **Answer: 2024-03-06 06:37:24**
+
+---
 
 **8. The attacker logged into their backdoor account and utilized their higher privileges to download a script. What is the full command executed using sudo?**
 
