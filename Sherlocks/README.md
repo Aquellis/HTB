@@ -7,7 +7,7 @@ This is the running list of all HTB Sherlocks completed so far. Links direct to 
 * Meerkat
 * NeuroSync-D
 * Unit42
-* Reaper
+* [Reaper](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Reaper.md)
 * UFO-1
 * MangoBleed
-* Brutus
+* [Brutus](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Brutus.md)
