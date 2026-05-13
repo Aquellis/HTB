@@ -35,6 +35,8 @@ X-Originating-IP: [45.67.89.10]
 
 **Answer: 45.67.89.10**
 
+---
+
 **2. Which mail server relayed this email before reaching the victim?**
 
 This can be found at the topmost **Received: from** listing in the email headers. This was the last mail server that relayed the message before it reached the victim.
@@ -43,6 +45,8 @@ Received: from mail.business-finance.com ([203.0.113.25])
 ```
 
 **Answer: 203.0.113.25**
+
+---
 
 **3. What is the sender's email address?**
 
@@ -53,6 +57,8 @@ From: "Finance Dept" <finance@business-finance.com>
 
 **Answer: finance@business-finance.com**
 
+---
+
 **4. What is the 'Reply-To' email address specified in the email?**
 
 The reply-to address can be found after the **Reply-To** header.
@@ -61,6 +67,8 @@ Reply-To: <support@business-finance.com>
 ```
 
 **Answer: support@business-finance.com**
+
+---
 
 **5. What is the SPF (Sender Policy Framework) result for this email?**
 
@@ -75,6 +83,8 @@ Authentication-Results: spf=pass (domain business-finance.com designates 45.67.8
 
 **Answer: pass**
 
+---
+
 **6. What is the domain used in the phishing URL inside the email?**
 
 Phishing URLs can be discovered in the email body. In this case it's found inside an **\<a href>** tag.
@@ -83,6 +93,8 @@ Phishing URLs can be discovered in the email body. In this case it's found insid
 ```
 
 **Answer: secure.business-finance.com**
+
+---
 
 **7. What is the fake company name used in the email?**
 
@@ -97,6 +109,8 @@ It appears that they are trying to disguise themselves as the fake company **Bus
 
 **Answer: Business Finance Ltd.**
 
+---
+
 **8. What is the name of the attachment included in the email?**
 
 Examing the email using a local email client, we can see the attachment at the bottom.
@@ -107,6 +121,8 @@ Content-Disposition: attachment; filename="Invoice_2025_Payment.zip"
 
 **Answer: Invoice_2025_Payment.zip**
 
+---
+
 **9. What is the SHA-256 hash of the attachment?**
 
 To obtain the SHA-256 hash of the email attachment, we must first download it from the email and use a hashing tool or submit the file for analysis. 
@@ -114,11 +130,15 @@ In our case we uploaded the file to [VirusTotal](https://www.virustotal.com/gui/
 
 **Answer: 8379c41239e9af845b2ab6c27a7509ae8804d7d73e455c800a551b22ba25bb4a**
 
+---
+
 **10. What is the filename of the malicious file contained within the ZIP attachment?**
 
 Use a ZIP extraction tool on the Invoice_2025_Payment.zip file to see the malicous file it contains.
 
 **Answer: invoice_document.pdf.bat**
+
+---
 
 **11. Which MITRE ATT&CK techniques are associated with this attack?**
 
