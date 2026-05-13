@@ -44,6 +44,8 @@ Apply the Wireshark display filter `nbns` and look for packets where an IP addre
 
 **Answer: 172.17.79.129**
 
+---
+
 **2. What is the IP Address for Forela-Wkstn002?**
 
 Hint provided: Filter for nbns protocol to find the relevant IP Address.
@@ -53,6 +55,8 @@ Using the same method as in question 1, find the IP address returned for Forela-
 ![q2](../Images/Sherlock_Reaper_q2.PNG)
 
 **Answer: 172.17.79.136**
+
+---
 
 **3. What is the username of the account whose hash was stolen by the attacker?**
 
@@ -64,6 +68,8 @@ Apply the Wireshark display filter `ntlmssp` and packets containing Session Setu
 
 **Answer: arthur.kyle**
 
+---
+
 **4. What is the IP Address of Unknown Device used by the attacker to intercept credentials?**
 
 Hint provided: Look for an IP Address that does not belong to any workstation but is involved in authentication flow for the victim user. Alternatively you can also filter for NBNS protocol and the device with no hostname is the device we are looking for. Another method is to look for the anomalous logon event and see the source IP Address.
@@ -74,6 +80,8 @@ Apply the Wireshark display filter `nbns` and look for packets with Name queries
 
 **Answer: 172.17.79.135**
 
+---
+
 **5. What was the fileshare navigated by the victim user account?**
 
 Hint provided: Filter for smb2 traffic in wireshark. Search for keywords "BAD_NETWORK_NAME" in packet details.
@@ -81,6 +89,8 @@ Hint provided: Filter for smb2 traffic in wireshark. Search for keywords "BAD_NE
 Apply the Wireshark display filter `smb2` and search for Tree Connect Request packets where the response is **Tree Connect Response, Error: STATUS_BAD_NETWORK_NAME**. These are requests where the file share doesn't exist or can't be accessed by the user.
 
 **Answer: \\DC01\Trip**
+
+---
 
 **6. What is the source port used to logon to the target workstation using the compromised account?**
 
@@ -92,6 +102,8 @@ Open the reaperSecurity.json file and look for events with EventID of 4624 (look
 
 **Answer: 40252**
 
+---
+
 **7. What is the Logon ID for the malicious session?**
 
 Hint provided: In the same event, look for LOGON ID Value
@@ -99,6 +111,8 @@ Hint provided: In the same event, look for LOGON ID Value
 Examining the same log from question 6, look for the **TargetLogonId** field for the Logon ID.
 
 **Answer: 0x64a799**
+
+---
 
 **8. The detection was based on the mismatch of hostname and the assigned IP Address.What is the workstation name and the source IP Address from which the malicious logon occurred?**
 
@@ -108,6 +122,8 @@ Looking back at the event log from questions 6 & 7, the hostname can be found in
 
 **Answer: FORELA-WKSTN002, 172.17.79.135**
 
+---
+
 **9. At what UTC time did the malicious logon happen?**
 
 Hint provided: Look in details tab for the UTC Time
@@ -115,6 +131,8 @@ Hint provided: Look in details tab for the UTC Time
 Looking back at the event log from the previous three questions, the timestamp can be found in the **SystemTime** field.
 
 **Answer: 2024-07-31 04:55:16**
+
+---
 
 **10. What is the share Name accessed as part of the authentication process by the malicious tool used by the attacker?**
 
