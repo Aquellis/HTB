@@ -9,5 +9,5 @@
 ```
 
 <p align="center">
-  <img src="https://github.com/Aquellis/HTB/blob/044e6b057c5115445ff5d1295784bea05e58f771/Images/HTB_logo.PNG" alt="HTB logo"/>
+  <img src="https://github.com/Aquellis/HTB/blob/044e6b057c5115445ff5d1295784bea05e58f771/Images/HTB_logo.PNG" alt="HTB logo" width="300"/>
 </p>
