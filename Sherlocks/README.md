@@ -1,15 +1,19 @@
 ## Hack the Box Sherlock Writeups
 
-This is the running list of all HTB Sherlocks completed so far. Links direct to their writeups. Writeups are only posted for retired Sherlocks.
-* [Interceptor](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Interceptor.md)
-* ElectricBreeze-1
-* SalineBreeze-1
-* [PhishNet](https://github.com/Aquellis/HTB/blob/main/Sherlocks/PhishNet.md)
-* Bumblebee
-* Meerkat
-* NeuroSync-D
-* Unit42
-* [Reaper](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Reaper.md)
-* UFO-1
-* MangoBleed
+This is the running list of all HTB Sherlocks I have completed so far.
+
+Click the links below to open the writeups. Writeups are only posted for retired Sherlocks.
+
+* [Bumblebee]()
 * [Brutus](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Brutus.md)
+* [ElectricBreeze-1]()
+* [Interceptor](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Interceptor.md)
+* [MangoBleed]()
+* [Meerkat]()
+* [NeuroSync-D]()
+* [Operation Blackout 2025: Smoke & Mirrors](https://github.com/Aquellis/HTB/blob/main/Sherlocks/SmokeAndMirrors.md)
+* [PhishNet](https://github.com/Aquellis/HTB/blob/main/Sherlocks/PhishNet.md)
+* [Reaper](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Reaper.md)
+* [SalineBreeze-1]()
+* [UFO-1]()
+* [Unit42]()
