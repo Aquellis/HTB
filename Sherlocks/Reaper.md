@@ -2,16 +2,16 @@
 
 Find the Sherlock [here.](https://app.hackthebox.com/sherlocks/Reaper?tab=play_sherlock)
 
-## Description
-Our SIEM alerted us to a suspicious logon event which needs to be looked at immediately . The alert details were that the IP Address and the Source Workstation name were a mismatch .You are provided a network capture and event logs from the surrounding time around the incident timeframe. Correlate the given evidence and report back to your SOC Manager.
-
-| Difficulty  | Category |
-| ----------- | -------- |
-| Very Easy   | DFIR     |
+|Difficulty |Category|
+|:---------:|:------:|
+| Very Easy | DFIR   |
 
 **Skills learned:**
-* Network traffic analysis
-* Windows Security log analysis
+* Network traffic analysis using Wireshark
+* Windows Security log analysis using Windows Event Viewer
+
+## Description
+Our SIEM alerted us to a suspicious logon event which needs to be looked at immediately . The alert details were that the IP Address and the Source Workstation name were a mismatch .You are provided a network capture and event logs from the surrounding time around the incident timeframe. Correlate the given evidence and report back to your SOC Manager.
 
 **File attachment(s):**
 ```text

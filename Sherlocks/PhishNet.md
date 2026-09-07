@@ -2,20 +2,20 @@
 
 Find the Sherlock [here.](https://app.hackthebox.com/sherlocks/PhishNet?tab=play_sherlock)
 
-## Description
-An accounting team receives an urgent payment request from a known vendor. The email appears legitimate but contains a suspicious link and a .zip attachment hiding malware. Your task is to analyze the email headers, and uncover the attacker's scheme.
-
-| Difficulty  | Category |
-| ----------- | -------- |
-| Very Easy   | SOC      |
+|Difficulty |Category|
+|:---------:|:------:|
+| Very Easy |  SOC   |
 
 **Skills learned:**
-* Email Header Analysis
+* Email header analysis for phishing investigation
+
+## Description
+An accounting team receives an urgent payment request from a known vendor. The email appears legitimate but contains a suspicious link and a .zip attachment hiding malware. Your task is to analyze the email headers, and uncover the attacker's scheme.
 
 **File attachment(s):**
 ```text
 PhishNet.zip
-├── email.eml
+└── email.eml
 ```
 
 ## Initial Examination

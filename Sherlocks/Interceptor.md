@@ -2,21 +2,21 @@
 
 Find the Sherlock [here.](https://app.hackthebox.com/sherlocks/Interceptor?tab=play_sherlock)
 
-## Description
-A recent anomaly has been detected in our network traffic, suggesting a potential breach. Our team suspects that an unauthorized entity has infiltrated our systems and accessed confidential company data. Your mission is to unravel this mystery, understand the breach, and determine the extent of the compromised data.
-
-| Difficulty  | Category |
-| ----------- | -------- |
-| Easy        | SOC      |
+|Difficulty |Category|
+|:---------:|:------:|
+| Easy      | SOC    |
 
 **Skills learned:**
-* Threat intelligence
-* Network traffic analysis
+* Utilizing VirusTotal for threat intelligence
+* Network traffic analysis using Wireshark
+
+## Description
+A recent anomaly has been detected in our network traffic, suggesting a potential breach. Our team suspects that an unauthorized entity has infiltrated our systems and accessed confidential company data. Your mission is to unravel this mystery, understand the breach, and determine the extent of the compromised data.
 
 **File attachment(s):**
 ```text
 Interceptor.zip
-├── interceptor.pcap
+└── interceptor.pcap
 ```
 
 ## Questions
