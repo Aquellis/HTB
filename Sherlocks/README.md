@@ -6,7 +6,7 @@ Click the links below to open the writeups. Writeups are only posted for retired
 
 * [Bumblebee](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Bumblebee.md)
 * [Brutus](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Brutus.md)
-* ElectricBreeze-1
+* [ElectricBreeze-1](https://github.com/Aquellis/HTB/blob/main/Sherlocks/ElectricBreeze1.md)
 * [Interceptor](https://github.com/Aquellis/HTB/blob/main/Sherlocks/Interceptor.md)
 * MangoBleed
 * Meerkat
